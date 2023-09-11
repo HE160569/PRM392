@@ -7,119 +7,68 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="107dp"
-        android:layout_height="194dp"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:srcCompat="@drawable/_75610786_276226715204572_7363777047172771094_n" />
+        android:layout_width="190dp"
+        android:layout_height="300dp"
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="35dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="183dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/_75610786_276226715204572_7363777047172771094_n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/detail_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Price: 1000$"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="serif"
+        android:text="Price: 1000$"
         android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <TextView
         android:id="@+id/detail_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Samsung Galaxy Note 9\nDimension: 1200x1200\nPublished on: Aug 24th, 2018\nCategory: Electronics\nTags: Samsung Galaxy Note"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/guideline6"
-        tools:ignore="DuplicateIds" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="172dp" />
+        app:layout_constraintEnd_toEndtOf="@id/imageView4"
+        tools:ignore="DuplicateIds"
+        tools:layout_editor_absoluteX="218dp"
+        tools:layout_editor_absoluteY="252dp" />
 
     <Button
-        android:id="@+id/home_btn"
+        android:id="@+id/HOME_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#696969"
+        android:layout_marginTop="172dp"
         android:text="HOME"
-        android:textColorLink="#CCBDBD"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/guideline7"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
-        android:id="@+id/detail_btn"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:background="#696969"
-        android:text="DETAIL"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/home_btn"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="@+id/home_btn"
-        app:layout_constraintVertical_bias="0.0" />
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/HOME_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/HOME_btn" />
 
     <Button
-        android:id="@+id/buynow_btn"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:background="#696969"
-        android:text="BUY NOW"
-        android:textColor="@color/black"
-        android:textColorHighlight="#7E2929"
-        app:layout_constraintBottom_toBottomOf="@+id/home_btn"
-        app:layout_constraintEnd_toStartOf="@+id/detail_btn"
-        app:layout_constraintStart_toEndOf="@+id/home_btn"
-        app:layout_constraintTop_toTopOf="@+id/home_btn"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="141dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="165dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="231dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="602dp" />
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/HOME_btn"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/HOME_btn"
+        app:layout_constraintTop_toTopOf="@+id/HOME_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
